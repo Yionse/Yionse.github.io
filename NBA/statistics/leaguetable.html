@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>积分榜</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding:0;
+            background: #E5E5E5;
+        }
+        .box{
+            width: 1000px;
+            margin: 0 auto;
+            border: 20px solid #E5E5F9;
+        }
+        .title{
+            width: 100%;
+            height: 239px;
+            background: url("images/title_bg.jpg");
+            margin: 0px auto 10px;
+        }
+        .link{
+            display: inline-block;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            margin-bottom: 10px;
+            font-size: 23px;
+            text-decoration: none;
+        }
+        .titlefont{
+            width: 100px;
+            background: #408ED6;
+        }
+        a:link,a:visited{
+            color:#9A75BC;
+            background: #F0F8FF;
+        }
+        a:hover,a:active{
+            background: #FFEBCD;
+        }
+        .east{
+            width: 100%;
+            height: 90px;
+            line-height: 90px;
+            background:#408ED6;
+            font-size: 40px;
+            color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .west{
+            width: 100%;
+            height: 90px;
+            line-height: 90px;
+            background:#D33556;
+            font-size: 40px;
+            color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .list{
+            width:868px;
+            margin: 0 auto;
+        }
+        .listtitle{
+            width: 100%;
+            height: 70px;
+            background: rgba(0,0,0,0.1);
+        }
+        .listtitle div{
+            display: inline-block;
+            width: 124px;
+            font-size: 31px;
+            text-align: center;
+            height: 70px;
+            line-height: 70px;
+            background: #FFEBCD;
+            border-bottom: 5px solid #9BB2DE;
+        }
+        .information{
+            width: 100%;
+            height: 60px;
+            margin-top: 10px;
+            border-bottom: 2px solid #9BB2DE;
+        }
+        .rank{
+            width:60px;
+            height: 50px;
+            background: #408ED6;
+            margin: 0 auto;
+            margin-top:5px ;
+            text-align: center;
+            line-height: 50px;
+        }
+        .rankk{
+            width:60px;
+            height: 50px;
+            background: rgba(0,0,0,0.1);
+            margin: 0 auto;
+            margin-top:5px ;
+            text-align: center;
+            line-height: 50px;
+        }
+        .rankkk{
+            width:60px;
+            height: 50px;
+            background: #D33556;
+            margin: 0 auto;
+            margin-top:5px ;
+            text-align: center;
+            line-height: 50px;
+        }
+        .ranktable{
+            width: 100px;
+            height: 60px;
+            float: left;
+        }
+        .logo{
+            width: 120px;
+            height: 60px;
+            float: left;
+            margin-left: 20px;
+            text-align: center;
+        }
+        .name{
+            width: 120px;
+            height: 60px;
+            float: left;
+            text-align: center;
+            line-height: 60px;
+            margin-left: 10px;
+            font-size: 30px;
+        }
+        .win{
+            width: 70px;
+            height: 60px;
+            float: left;
+            text-align: center;
+            line-height: 60px;
+            margin-left: 27px;
+            font-size: 30px;
+        }
+        .winlose{
+            width: 100px;
+            height: 60px;
+            float: left;
+            text-align: center;
+            line-height: 60px;
+            margin-left: 40px;
+            font-size: 30px;
+        }
+        .probability {
+            width: 50px;
+            height: 60px;
+            float: left;
+            text-align: center;
+            line-height: 60px;
+            margin-left:56px;
+            font-size: 30px;
+        }
+        .sorce{
+            width: 70px;
+            height: 60px;
+            float: left;
+            text-align: center;
+            line-height: 60px;
+            margin-left:49px;
+            font-size: 30px;
+        }
+        .end{
+            width: 100%;
+            height: 250px;
+            background: #006BB7;
+            border:  1px solid #006BB7;
+        }  .copright{
+               width: 500px;
+               height: 50px;
+               margin:60px auto 0;
+               color: white;
+               text-align: center;
+               font-size: 40px;
+            background: #006BB7;
+           }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="title"></div>
+    <a class="link" href="../index.html"><-首页</a>
+    <a class="link" href="#dongbu">东部联盟</a>
+    <a class="link" href="#xibu">西部联盟</a>
+    <div class="east" id="dongbu">EAST</div>
+    <div class="list">
+        <div class="listtitle">
+            <div>排名</div><div>队徽</div><div>球队</div><div>胜场</div><div>输赢</div><div>胜率</div><div>场均得分</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rank">1</div>
+            </div>
+            <div class="logo"><img src="images/xl.png" width="60"></div>
+            <div class="name">雄鹿</div>
+            <div class="win">56</div>
+            <div class="winlose">56-17</div>
+            <div class="probability">76%</div>
+            <div class="sorce">118.7</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rank">2</div>
+            </div>
+            <div class="logo"><img src="images/ml.png" width="60"></div>
+            <div class="name">猛龙</div>
+            <div class="win">53</div>
+            <div class="winlose">53-19</div>
+            <div class="probability">73%</div>
+            <div class="sorce">112.8</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rank">3</div>
+            </div>
+            <div class="logo"><img src="images/ketr.png" width="60"></div>
+            <div class="name">凯尔特人</div>
+            <div class="win">48</div>
+            <div class="winlose">48-24</div>
+            <div class="probability">66%</div>
+            <div class="sorce">113.7</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rank">4</div>
+            </div>
+            <div class="logo"><img src="images/bxz.png" width="60"></div>
+            <div class="name">步行者</div>
+            <div class="win">45</div>
+            <div class="winlose">45-28</div>
+            <div class="probability">61%</div>
+            <div class="sorce">109.4</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rank">5</div>
+            </div>
+            <div class="logo"><img src="images/rh.png" width="60"></div>
+            <div class="name">热火</div>
+            <div class="win">44</div>
+            <div class="winlose">44-29</div>
+            <div class="probability">60%</div>
+            <div class="sorce">109.1</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rank">6</div>
+            </div>
+            <div class="logo"><img src="images/76r.png" width="60"></div>
+            <div class="name">76人</div>
+            <div class="win">43</div>
+            <div class="winlose">43-30</div>
+            <div class="probability">58%</div>
+            <div class="sorce">110.7</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rank">7</div>
+            </div>
+            <div class="logo"><img src="images/lw.png" width="60"></div>
+            <div class="name">篮网</div>
+            <div class="win">35</div>
+            <div class="winlose">35-37</div>
+            <div class="probability">48%</div>
+            <div class="sorce">111.8</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rank">8</div>
+            </div>
+            <div class="logo"><img src="images/ms.png" width="60"></div>
+            <div class="name">魔术</div>
+            <div class="win">33</div>
+            <div class="winlose">33-40</div>
+            <div class="probability">45%</div>
+            <div class="sorce">107.3</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">9</div>
+            </div>
+            <div class="logo"><img src="images/qc.png" width="60"></div>
+            <div class="name">奇才</div>
+            <div class="win">25</div>
+            <div class="winlose">25-47</div>
+            <div class="probability">58%</div>
+            <div class="sorce">110.7</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">10</div>
+            </div>
+            <div class="logo"><img src="images/hf.png" width="60"></div>
+            <div class="name">黄蜂</div>
+            <div class="win">23</div>
+            <div class="winlose">23-42</div>
+            <div class="probability">35%</div>
+            <div class="sorce">102.9</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">11</div>
+            </div>
+            <div class="logo"><img src="images/gn.png" width="60"></div>
+            <div class="name">公牛</div>
+            <div class="win">22</div>
+            <div class="winlose">22-43</div>
+            <div class="probability">33%</div>
+            <div class="sorce">106.8</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">12</div>
+            </div>
+            <div class="logo"><img src="images/nks.png" width="60"></div>
+            <div class="name">尼克斯</div>
+            <div class="win">21</div>
+            <div class="winlose">21-45</div>
+            <div class="probability">33%</div>
+            <div class="sorce">105.8</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">13</div>
+            </div>
+            <div class="logo"><img src="images/hs.png" width="60"></div>
+            <div class="name">活塞</div>
+            <div class="win">20</div>
+            <div class="winlose">20-46</div>
+            <div class="probability">30%</div>
+            <div class="sorce">107.2</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">14</div>
+            </div>
+            <div class="logo"><img src="images/ly.png" width="60"></div>
+            <div class="name">老鹰</div>
+            <div class="win">20</div>
+            <div class="winlose">20-47</div>
+            <div class="probability">29%</div>
+            <div class="sorce">111.8</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">15</div>
+            </div>
+            <div class="logo"><img src="images/qs.png" width="60"></div>
+            <div class="name">骑士</div>
+            <div class="win">19</div>
+            <div class="winlose">19-46</div>
+            <div class="probability">19%</div>
+            <div class="sorce">106.9</div>
+        </div>
+    </div>
+    <div class="west" id="xibu">WEST</div>
+    <div class="list">
+        <div class="listtitle">
+            <div>排名</div><div>队徽</div><div>球队</div><div>胜场</div><div>输赢</div><div>胜率</div><div>场均得分</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankkk">1</div>
+            </div>
+            <div class="logo"><img src="images/hr.png" width="60"></div>
+            <div class="name">湖人</div>
+            <div class="win">52</div>
+            <div class="winlose">52-19</div>
+            <div class="probability">73%</div>
+            <div class="sorce">113.4</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankkk">2</div>
+            </div>
+            <div class="logo"><img src="images/kc.png" width="60"></div>
+            <div class="name">快船</div>
+            <div class="win">49</div>
+            <div class="winlose">49-26</div>
+            <div class="probability">68%</div>
+            <div class="sorce">116.3</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankkk">3</div>
+            </div>
+            <div class="logo"><img src="images/jj.png" width="60"></div>
+            <div class="name">掘金</div>
+            <div class="win">46</div>
+            <div class="winlose">46-27</div>
+            <div class="probability">63%</div>
+            <div class="sorce">111.3</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankkk">4</div>
+            </div>
+            <div class="logo"><img src="images/hj.png" width="60"></div>
+            <div class="name">火箭</div>
+            <div class="win">44</div>
+            <div class="winlose">44-28</div>
+            <div class="probability">61%</div>
+            <div class="sorce">117.8</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankkk">5</div>
+            </div>
+            <div class="logo"><img src="images/lt.png" width="60"></div>
+            <div class="name">雷霆</div>
+            <div class="win">44</div>
+            <div class="winlose">44-28</div>
+            <div class="probability">61%</div>
+            <div class="sorce">110.4</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankkk">6</div>
+            </div>
+            <div class="logo"><img src="images/js.png" width="60"></div>
+            <div class="name">爵士</div>
+            <div class="win">44</div>
+            <div class="winlose">44-28</div>
+            <div class="probability">61%</div>
+            <div class="sorce">111.3</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankkk">7</div>
+            </div>
+            <div class="logo"><img src="images/dxx.png" width="60"></div>
+            <div class="name">独行侠</div>
+            <div class="win">43</div>
+            <div class="winlose">43-32</div>
+            <div class="probability">57%</div>
+            <div class="sorce">117.0</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankkk">8</div>
+            </div>
+            <div class="logo"><img src="images/ktz.png" width="60"></div>
+            <div class="name">开拓者</div>
+            <div class="win">35</div>
+            <div class="winlose">35-39</div>
+            <div class="probability">47%</div>
+            <div class="sorce">115.0</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">9</div>
+            </div>
+            <div class="logo"><img src="images/hx.png" width="60"></div>
+            <div class="name">灰熊</div>
+            <div class="win">34</div>
+            <div class="winlose">34-39</div>
+            <div class="probability">46%</div>
+            <div class="sorce">112.6</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">10</div>
+            </div>
+            <div class="logo"><img src="images/ty.png" width="60"></div>
+            <div class="name">太阳</div>
+            <div class="win">34</div>
+            <div class="winlose">34-39</div>
+            <div class="probability">46%</div>
+            <div class="sorce">113.6</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">11</div>
+            </div>
+            <div class="logo"><img src="images/mc.png" width="60"></div>
+            <div class="name">马刺</div>
+            <div class="win">21</div>
+            <div class="winlose">21-45</div>
+            <div class="probability">33%</div>
+            <div class="sorce">105.8</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">12</div>
+            </div>
+            <div class="logo"><img src="images/gw.png" width="60"></div>
+            <div class="name">国王</div>
+            <div class="win">31</div>
+            <div class="winlose">31-41</div>
+            <div class="probability">13%</div>
+            <div class="sorce">110.1</div>
+        </div>
+
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">13</div>
+            </div>
+            <div class="logo"><img src="images/th.png" width="60"></div>
+            <div class="name">鹈鹕</div>
+            <div class="win">30</div>
+            <div class="winlose">30-42</div>
+            <div class="probability">41%</div>
+            <div class="sorce">115.8</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">14</div>
+            </div>
+            <div class="logo"><img src="images/ssl.png" width="60"></div>
+            <div class="name">森林狼</div>
+            <div class="win">19</div>
+            <div class="winlose">19-45</div>
+            <div class="probability">29%</div>
+            <div class="sorce">113.3</div>
+        </div>
+        <div class="information">
+            <div class="ranktable">
+                <div class="rankk">15</div>
+            </div>
+            <div class="logo"><img src="images/ys.png" width="60"></div>
+            <div class="name">勇士</div>
+            <div class="win">15</div>
+            <div class="winlose">15-50</div>
+            <div class="probability">23%</div>
+            <div class="sorce">106.3</div>
+        </div>
+    </div>
+</div>
+<div class="end">
+    <div class="copright">武汉生物工程学院</div>
+    <div class="copright">张天成————版权所有</div>
+</div>
+</body>
+</html>
