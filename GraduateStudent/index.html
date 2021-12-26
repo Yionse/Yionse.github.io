@@ -120,7 +120,7 @@
 <script>
     //JS部分，实现倒计时效果
     let dateText = document.querySelector('#date');
-    let times = +new Date("2021-12-25 00:00:00");
+    let times = +new Date("2022-12-25 00:00:00");
     countDown();
 
     function countDown() {
@@ -133,7 +133,7 @@
         m = m < 10 ? '0' + m : m;
         let s = sss % 60;
         s = s < 10 ? '0' + s : s;
-        dateText.innerHTML = "距离22考研还有<span style='color:red'>" + d + "天" + h + "小时" + m + "分钟" + s + "秒</span>";
+        dateText.innerHTML = "距离23考研还有<span style='color:red'>" + d + "天" + h + "小时" + m + "分钟" + s + "秒</span>";
     }
     setInterval(countDown, 1000);
 </script>
