@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.ico">
+    <!--设置页面的图标-->
+    <link rel="stylesheet" href="style.css">
+    <!--引入CSS样式文件-->
+    <!--设置页面图标-->
+    <title>玩家对战</title>
+    <script src="script.js"></script>
+    <!--引入JS文件-->
+</head>
+
+<body onload="drawRect()">
+    <div class="father">
+        <canvas width="640px" height="640px" id="canvas" onmousedown="player(event)"></canvas>
+        <img src="images/bg.jpeg">
+        <div id="bg">
+            <button id="star">开始游戏</button>
+            <!--两个按钮-->
+            <button id="home" onclick="window.location.href='index.html'">返回</button>
+        </div>
+    </div>
+    <div class="whiteWin">
+        <!--白色赢的画面-->
+        <img src="win.png" alt="">
+        <button id="wRenew" onclick="renewGame()">重新开始</button>
+        <!--添加一个按钮让页面刷新，得已重新开始-->
+        <img src="images/b.png" alt="">
+    </div>
+    <div class="blackWin">
+        <!--黑色赢的画面-->
+        <img src="win.png" alt="">
+        <button id="bRenew" onclick="renewGame()">重新开始</button>
+        <img src="images/w.png" alt="">
+    </div>
+    <audio id="chessMusic" src="buttonMusic.wav"></audio>
+    <audio id="winMusic" src="win.ogg"></audio>
+</body>
+
+</html>
+<script>
+    var cnv; //定义一个变量，页面中的canvas元素
+    var cxt; //定义一个变量，用于存放canvas元素得到的2D对象，也就是棋盘，后期所有的操作都在这个cxt基础上进行
+    var img_b = new Image();
+    img_b.src = 'images/w.png'; //创建黑方棋子的对象    
+    var img_w = new Image();
+    img_w.src = 'images/b.png'; //创建白方妻子的对象
+    var isWhite = false; //设置是否轮到白棋
+    var isWell = false; //设置该局是否赢了， 如果赢了就不能再走了
+    var chessDate = new Array(15); //初始化棋盘，即横竖一共为15个格子
+    var starGame = document.getElementById('star'); //获取开始游戏按钮
+    var home = document.getElementById('home'); //获取返回按钮
+    var bg = document.getElementById('bg'); //获取遮罩层
+    var whiteWin = document.querySelector('.whiteWin'); //获取两个赢棋以后的盒子
+    var blackWin = document.querySelector('.blackWin');
+    var wRenew = document.getElementById('wRenew'); //获取两个重新开始的按钮
+    var bRenew = document.getElementById('bRenew');
+
+    var chessMusic = document.querySelector('#chessMusic');
+    var winMusic = document.querySelector('#winMusic');
+    starGame.addEventListener('click', function() { //给开始按钮添加点击方法
+        bg.style.display = 'none'; //让遮罩层不显示
+    });
+
+    for (var x = 0; x < 15; x++) {
+        chessDate[x] = new Array(15);
+        for (var y = 0; y < 15; y++) { //双重for循环，用于创建一个二维数组，做到了横竖
+            chessDate[x][y] = 0; //初始化0为没有走过的，1为白棋走的，2位黑棋走的
+        }
+    }
+</script>

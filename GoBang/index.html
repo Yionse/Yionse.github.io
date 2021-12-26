@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.ico">
+    <!--设置页面图标-->
+    <title>欢乐五子棋</title>
+    <style>
+        * {
+            /*取消所有的边距*/
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            /*设置一个透明背景*/
+            background: rgba(0, 0, 0, .3);
+        }
+        
+        #indexBox {
+            /*改为相对定位*/
+            position: relative;
+        }
+        
+        #indexBg {
+            /*改为绝对定位*/
+            position: absolute;
+            /*设置大小及位置*/
+            width: 640px;
+            height: 640px;
+            top: 30px;
+            left: 440px;
+        }
+        
+        #title {
+            /*同上*/
+            position: absolute;
+            width: 260px;
+            height: 121px;
+            top: 30px;
+            left: 615px;
+        }
+        
+        #indexBox button {
+            position: absolute;
+            /*设置按钮为块级元素，一行一个*/
+            display: block;
+            /*使按钮居中*/
+            margin: 0 auto;
+            /*设置宽高和背景*/
+            width: 158px;
+            height: 61px;
+            top: 250px;
+            left: 660px;
+            background: url("images/ButtonBackground.png") no-repeat;
+            /*更改鼠标样式*/
+            cursor: pointer;
+        }
+        
+        #indexBox :last-child {
+            /*第二个按钮的上边距要多一些*/
+            top: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="indexBox">
+        <!--大盒子-->
+        <img id="indexBg" src="images/star.jpeg">
+        <!--页面背景-->
+        <img id="title" src="images/title.png" alt="">
+        <!--页面标题-->
+        <button onclick="window.location.href = 'playerVSplayer.html'">人人对战</button>
+        <!--按钮跳转界面-->
+        <button onclick="window.location.href = 'playerVScomputer.html'">人机对战</button>
+    </div>
+</body>
+
+</html>
