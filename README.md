@@ -20,4 +20,6 @@
 
 网站链接：https://yionse.github.io/GoBang/index.html
 
-网站效果：![image](https://user-images.githubusercontent.com/65143443/147401882-35250a2d-144b-4c25-b432-a1be7ef2bc65.png)
+网站效果：
+
+![image](https://user-images.githubusercontent.com/65143443/147401882-35250a2d-144b-4c25-b432-a1be7ef2bc65.png)
