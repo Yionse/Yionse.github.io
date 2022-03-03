@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一战成研</title>
+    <meta name="keywords" content="考研信息">
+    <meta name="description" content="一战成研是为了给广大研友查询考研信息的平台，这里可以查到院校以及专业信息、复试分数、考试科目、招生人数等信息。">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="font_jehqwois0hp/iconfont.css">
+    <link rel="stylesheet" href="initialization.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!--标题栏start-->
+    <header class="header">
+        <!--logo start-->
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="一战成研">一战成研</a>
+            </h1>
+        </div>
+        <!--logo end-->
+        <!--网站标题-->
+        <div class="text">一战成研</div>
+        <div id="date"></div>
+    </header>
+    <!--标题栏end-->
+
+    <!--主体部分start-->
+    <article class="article">
+        <!--导航栏start-->
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="Javascript:0;" id="current">主&nbsp;&nbsp;页</a>
+                </li>
+                <li>
+                    <a href="computer.html"><strong>计算机类</strong></a>
+                </li>
+                <li>
+                    <a href="professionalDegree.html"><strong>专业硕士</strong></a>
+                </li>
+                <li>
+                    <a href="philosophy.html" class="iconfont">&#xe60b;&nbsp;哲学</a>
+                </li>
+                <li>
+                    <a href="economics.html" class="iconfont">&#xe642;&nbsp;经济学</a>
+                </li>
+                <li>
+                    <a href="law.html" class="iconfont">&#xe625;&nbsp;法学</a>
+                </li>
+                <li>
+                    <a href="education.html" class="iconfont">&#xe626;&nbsp;教育学</a>
+                </li>
+                <li>
+                    <a href="literature.html" class="iconfont">&#xe62a;&nbsp;文学</a>
+                </li>
+                <li>
+                    <a href="history.html" class="iconfont">&#xe628;&nbsp;历史学</a>
+                </li>
+                <li>
+                    <a href="physics.html" class="iconfont">&#xe62b;&nbsp;理学</a>
+                </li>
+                <li>
+                    <a href="industry.html" class="iconfont">&#xe62c;&nbsp;工学</a>
+                </li>
+                <li>
+                    <a href="agronomy.html" class="iconfont">&#xe62d;&nbsp;农学</a>
+                </li>
+                <li>
+                    <a href="medicine.html" class="iconfont">&#xe60f;&nbsp;医学</a>
+                </li>
+                <li>
+                    <a href="strategics.html" class="iconfont">&#xe611;&nbsp;军事学</a>
+                </li>
+                <li>
+                    <a href="management.html" class="iconfont">&#xe62e;&nbsp;管理学</a>
+                </li>
+                <li>
+                    <a href="art.html" class="iconfont">&#xe62f;&nbsp;艺术学</a>
+                </li>
+            </ul>
+        </nav>
+        <!--导航栏end-->
+
+        <!--内容区域start-->
+        <div class="main">
+            <div class="statement">
+                <h1>使用须知</h1>
+                <ol>
+                    <li>计算机相关的专业是独立出来的</li>
+                    <li>专业硕士在对应专业硕士一栏，学术硕士则在对应的门类类别中</li>
+                    <li>查询时请输入正确信息，否则可能查询不到结果</li>
+                    <li>专硕中查不到学硕的相关信息</li>
+                    <li>学科之间信息相互独立，理学中的专业在工学中不可能查到</li>
+                </ol>
+            </div>
+            <div class="statement">
+                <h1>使用建议</h1>
+                <ol>
+                    <li>由于信息都是互联网收集，可能出现偏差，所以如果在本站查询以后，请自行去对应学校官网，或研招网查询校验</li>
+                </ol>
+            </div>
+            <div class="statement">
+                <h1>免责声明</h1>
+                <ol>
+                    <li>本站信息都搜集于互联网，仅供参考，对出现偏差造成的后果，概不负责</li>
+                    <li>如对本站有异议或反馈建议，请联系QQ：2458015575(注明来意)</li>
+                </ol>
+            </div>
+        </div>
+        <!--内容区域end-->
+    </article>
+    <!--主体部分end-->
+</body>
+<script>
+    //JS部分，实现倒计时效果
+    let dateText = document.querySelector('#date');
+    let times = +new Date("2022-12-25 00:00:00");
+    countDown();
+    setInterval(countDown, 1000);
+</script>
+
+</html>

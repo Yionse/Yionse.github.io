@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法学类</title>
+    <meta name="keywords" content="考研信息">
+    <meta name="description" content="一战成研是为了给广大研友查询考研信息的平台，这里可以查到院校以及专业信息、复试分数、考试科目、招生人数等信息。">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="font_jehqwois0hp/iconfont.css">
+    <link rel="stylesheet" href="initialization.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!--标题栏start-->
+    <header class="header">
+        <!--logo start-->
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="一战成研">一战成研</a>
+            </h1>
+        </div>
+        <!--logo end-->
+        <!--网站标题-->
+        <div class="text">一战成研</div>
+        <div id="date"></div>
+    </header>
+    <!--标题栏end-->
+
+    <!--主体部分start-->
+    <article class="article">
+        <!--导航栏start-->
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="index.html">主&nbsp;&nbsp;页</a>
+                </li>
+                <li>
+                    <a href="computer.html"><strong>计算机类</strong></a>
+                </li>
+                <li>
+                    <a href="professionalDegree.html"><strong>专业硕士</strong></a>
+                </li>
+                <li>
+                    <a href="philosophy.html" class="iconfont">&#xe60b;&nbsp;哲学</a>
+                </li>
+                <li>
+                    <a href="economics.html" class="iconfont">&#xe642;&nbsp;经济学</a>
+                </li>
+                <li>
+                    <a href="javascript:0;" class="iconfont" id="current">&#xe625;&nbsp;法学</a>
+                </li>
+                <li>
+                    <a href="education.html" class="iconfont">&#xe626;&nbsp;教育学</a>
+                </li>
+                <li>
+                    <a href="literature.html" class="iconfont">&#xe62a;&nbsp;文学</a>
+                </li>
+                <li>
+                    <a href="history.html" class="iconfont">&#xe628;&nbsp;历史学</a>
+                </li>
+                <li>
+                    <a href="physics.html" class="iconfont">&#xe62b;&nbsp;理学</a>
+                </li>
+                <li>
+                    <a href="industry.html" class="iconfont">&#xe62c;&nbsp;工学</a>
+                </li>
+                <li>
+                    <a href="agronomy.html" class="iconfont">&#xe62d;&nbsp;农学</a>
+                </li>
+                <li>
+                    <a href="medicine.html" class="iconfont">&#xe60f;&nbsp;医学</a>
+                </li>
+                <li>
+                    <a href="strategics.html" class="iconfont">&#xe611;&nbsp;军事学</a>
+                </li>
+                <li>
+                    <a href="management.html" class="iconfont">&#xe62e;&nbsp;管理学</a>
+                </li>
+                <li>
+                    <a href="art.html" class="iconfont">&#xe62f;&nbsp;艺术学</a>
+                </li>
+            </ul>
+        </nav>
+        <!--导航栏end-->
+
+        <!--内容区域start-->
+        <div class="main">
+            <form action="">
+                <div class="condition">
+                    <label>
+                        <span>学校类型:</span>
+                        <select name="schoolType" id="type">
+                            <option value="" disabled selected hidden>请选择</option>
+                            <option value="985高校">985高校</option>
+                            <option value="211高校">211高校</option>
+                            <option value="普通高校">普通高校</option>
+                            <option value="全部高校">全部高校</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>学校名称:</span>
+                        <input type="text" id="school" placeholder="请输入">
+                    </label>
+                    <label>
+                        <span>学院名称:</span>
+                        <input type="text" id="college" placeholder="请输入">
+                    </label>
+                </div>
+                <div class="condition">
+                    <label>
+                            <span>&nbsp;&nbsp;专业:</span>
+                            <select name="professional" id="professional">
+                                <option value="" disabled selected hidden>请选择</option>
+                                <option value="比较法学">比较法学</option>
+                                <option value="边疆学">边疆学</option>
+                                <option value="财税法学">财税法学</option>
+                                <option value="法律史">法律史</option>
+                                <option value="法律文化">法律文化</option>
+                                <option value="法律与金融">法律与金融</option>
+                                <option value="犯罪学">犯罪学</option>
+                                <option value="公安管理学">公安管理学</option>
+                                <option value="国家安全学">国家安全学</option>
+                                <option value="侦查学">侦查学</option>
+                                <option value="侦查学">侦查学</option>
+                                <option value="治安学">治安学</option>
+                                <option value="家政学">家政学</option>
+                                <option value="民俗学">民俗学</option>
+                                <option value="女性学">女性学</option>
+                                <option value="社会学">社会学</option>
+                                <option value="社会政策">社会政策</option>
+                                <option value="社会治理">社会治理</option>
+                                <option value="体育与社会">体育与社会</option>
+                                <option value="应用社会学">应用社会学</option>
+                            </select>
+                        </label>
+                    <label>
+                            <span>&nbsp;&nbsp;英语:</span>
+                            <select name="english" id="english">
+                                <option value="" disabled selected hidden>请选择</option>
+                                <option value="英语一">英语一</option>
+                                <option value="英语二">英语二</option>
+                                <option value="英语三">英语三</option>
+                            </select>
+                        </label>
+                    <label>
+                            <span>&nbsp;&nbsp;数学:</span>
+                            <select name="mathematics" id="mathematics">
+                                <option value="" disabled selected hidden>请选择</option>
+                                <option value="数学一">数学一</option>
+                                <option value="数学二">数学二</option>
+                                <option value="数学三">数学三</option>
+                                <option value="不考数学">不考数学</option>
+                            </select>
+                        </label>
+                </div>
+                <div class="condition">
+                    <button id="query" onclick="alert(' 数据库建设中！ ')">查询</button>
+                </div>
+            </form>
+        </div>
+        <!--内容区域end-->
+    </article>
+    <!--主体部分end-->
+</body>
+<script>
+    setInterval(setDate, 1000);
+</script>
+
+</html>
