@@ -1,0 +1,202 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #f2f4f7;
+  margin-bottom: 2.6667rem;
+}
+img {
+  vertical-align: text-top;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+a {
+  text-decoration: none;
+}
+.top {
+  background-color: #fff;
+  padding-bottom: 1.3333rem;
+}
+.top .header {
+  height: 2.1333rem;
+  text-align: center;
+  line-height: 2.1333rem;
+  font-size: 0.9333rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.top .nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.2rem 0 1.6533rem 0;
+}
+.top .nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 4.48rem;
+  flex: 33.33%;
+}
+.top .nav a span {
+  width: 3.7067rem;
+  height: 3.7067rem;
+}
+.top .nav a span img {
+  width: 100%;
+  height: 100%;
+}
+.top .nav a h4 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.6667rem;
+  color: #707070;
+}
+.top .nav a:nth-child(-n+3) {
+  margin-bottom: 1.6533rem;
+}
+.top .go {
+  height: 4.0533rem;
+  margin: 0 0.5333rem;
+}
+.top .go img {
+  height: 100%;
+}
+.middle {
+  overflow: hidden;
+  margin-top: 0.2667rem;
+  background-color: #fff;
+  padding: 1.0667rem 0.64rem;
+}
+.middle .middle-title {
+  height: 1.0133rem;
+  line-height: 1.0133rem;
+  display: flex;
+  justify-content: space-between;
+}
+.middle .middle-title h4 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 0.7467rem;
+}
+.middle .middle-title h4 img {
+  margin-right: 0.2133rem;
+}
+.middle .middle-title a {
+  color: #999;
+  font-size: 0.5867rem;
+}
+.middle .middle-job {
+  width: 18.72rem;
+  height: 11.4133rem;
+}
+.middle .middle-job .swiper-container {
+  overflow: hidden;
+  width: 14.4rem;
+  height: 100%;
+  margin: 0.5333rem 2.16rem 0;
+}
+.middle .middle-job .swiper-slide {
+  width: 6.5067rem;
+  background-color: skyblue;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+.middle .middle-job .swiper-slide img {
+  width: 9.0133rem;
+  height: 10.0267rem;
+}
+.middle .middle-job .swiper-slide a {
+  display: block;
+  color: #454545;
+  margin-top: 0.5333rem;
+}
+.middle .middle-job .swiper-slide-active,
+.middle .middle-job .swiper-slide-duplicate-active {
+  transform: scale(1);
+  z-index: 1;
+  opacity: 1;
+  font-size: 0.64rem;
+}
+.middle .middle-study .swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.8rem;
+}
+.middle .middle-study .swiper-slide {
+  width: 8rem!important;
+  border-radius: 0.2667rem !important;
+  height: 9.0667rem;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin: 0.2667rem 0 0.2667rem 0.2667rem;
+}
+.middle .middle-study .swiper-slide h4 {
+  font-weight: 400;
+  font-size: 0.6933rem;
+  margin: 0;
+  padding: 0.5333rem 0 0 0.2667rem;
+}
+.middle .middle-study .swiper-slide p {
+  margin-left: 0.2667rem;
+}
+.middle .middle-study .swiper-slide p span {
+  color: #ff4400;
+}
+.middle .middle-study .swiper-slide img {
+  display: block;
+  width: 8rem;
+  height: 5.0133rem;
+  object-fit: cover;
+}
+.footer {
+  display: flex;
+  position: fixed;
+  height: 2.9333rem;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  border-top: 1px solid #cccccc;
+  z-index: 1;
+}
+.footer a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  color: #666;
+  font-size: 0.5867rem;
+  flex: 1;
+}
+.footer a img {
+  width: 1.0667rem;
+  height: 1.0667rem;
+  margin-bottom: 0.2667rem;
+}

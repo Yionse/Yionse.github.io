@@ -1,0 +1,290 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    background: #f2f2f2;
+    margin: 0 auto;
+    font-size: 12px;
+    color: black;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+img {
+    vertical-align: middle;
+}
+li {
+    list-style: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+div {
+    box-sizing: border-box;
+}
+.search {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    height: 44px;
+    background-color: #fff;
+    z-index: 1;
+}
+.search .search-text {
+    height: 25px;
+    line-height: 23px;
+    width: 100%;
+    margin: 9px 8px 0;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0, .1);
+}
+.search .search-text::before {
+    content: "";
+    display: block;
+    float: left;
+    width: 15px;
+    height: 14px;
+    background: url(../images/sprite.png) no-repeat -59px -279px;
+    background-size: 104px auto;
+    margin: 4.5px 8px 0 8px;
+}
+.search a::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 23px;
+    background: url(../images/sprite.png) no-repeat -58px -194px;
+    background-size: 104px auto;
+    margin: 4px auto 0;
+}
+.search a {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    color: #2eb1e6;
+    font-size: 12px;
+}
+.focus {
+    padding-top: 44px;
+}
+.focus img {
+    width: 100%;
+}
+.local-nav {
+    height: 64px;
+    background-color: #fff;
+    margin: 3px 4px;
+    border-radius: 8px;
+}
+.local-nav ul {
+    display: flex;
+    width: 100%;
+    height: 64px;
+    overflow: hidden;
+}
+.local-nav ul li {
+    flex: 1;
+    height: 64px;
+}
+.local-nav ul li a{
+    display: block;
+    width: 100%;
+    height: 64px;
+    text-align: center;
+}
+.local-nav ul li a::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 5px auto 3px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+.local-nav ul li:nth-child(2) a::before {
+    background-position:  0 -32px;
+}
+.local-nav ul li:nth-child(3) a::before {
+    background-position: 0 -64px;
+}
+.local-nav ul li:nth-child(4) a::before {
+    background-position: 0 -96px;
+}
+.local-nav ul li:nth-child(5) a::before {
+    background-position: 0 -128px;
+    
+}
+/* nav */
+.nav {
+    margin: 0 4px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.nav .common {
+    display: flex;
+    height: 88px;
+    font-size: 12px;
+    color: white;
+}
+.nav .common:nth-child(2) {
+    margin: 3px 0;
+}
+.nav .common .common-items {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.nav .common .common-items:nth-child(2) {
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+.nav .common .common-items a {
+    flex: 1;
+    line-height: 44px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+.nav .common .common-items .common-items-son:nth-child(1) {
+    border-bottom: 1px solid white;
+}
+.nav .common:nth-child(1) {
+    background: -webkit-linear-gradient(left, #fa5a55, #fa994d);
+}
+.nav .common:nth-child(2) {
+    background: -webkit-linear-gradient(left, #4c91ed, #53bced);
+}
+.nav .common:nth-child(3) {
+    background: -webkit-linear-gradient(left, #34c2a8, #6bd459);
+}
+.nav .common .common-items:nth-child(1) {
+    background: url(../images/hotel.png) no-repeat bottom center;
+    background-size: 121px auto;
+}
+.subnav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px 4px 0;
+    border-radius: 8px;
+    padding: 5px 0;
+    overflow: hidden;
+    background: #fff;
+}
+.subnav li {
+    display: flex;
+    flex: 20%;
+}
+.subnav li:nth-child(-n+5) {
+    margin-bottom: 10px;
+}
+.subnav li a{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+.subnav li a::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/subnav-bg.png) no-repeat 0 0;
+    background-size: 24px auto;
+    margin: 4px 0;
+}
+.subnav li:nth-child(2) a::before {
+    background-position: 0 -25px;
+}
+.subnav li:nth-child(3) a::before {
+    background-position: 0 -56px;
+}
+.subnav li:nth-child(4) a::before {
+    background-position: 0 -86px;
+}
+.subnav li:nth-child(5) a::before {
+    background-position: 0 -114px;
+}
+.subnav li:nth-child(6) a::before {
+    background-position: 4px -141px;
+}
+.subnav li:nth-child(7) a::before {
+    background-position: 0 -171px;
+}
+.subnav li:nth-child(8) a::before {
+    background-position: 0 -197px;
+}
+.subnav li:nth-child(9) a::before {
+    background-position: 0 -223px;
+}
+.subnav li:nth-child(10) a::before {
+    background-position: 0 -277px;
+}
+
+/* 售卖模块 */
+.sales-title{
+    position: relative;
+    height: 66px;
+    margin: 4px 3px;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.sales-title h3 {
+    position: absolute;
+    width: 79px;
+    height: 15px;
+    margin: 0;
+    left: 5px;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-indent: -999px;
+    background:  url(../images/hot.png) no-repeat 0 -20px;
+    background-size: 79px auto;
+}
+.sales-title .more {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 14px;
+    background: -webkit-linear-gradient(#ff516f, #ff6bc5);
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: white;
+}
+.sales-title .more::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: translate(0, -45%) rotate(45deg);
+}
+.sales-title .more a {
+    color: white;
+}
+.sales-body-row {
+    display: flex;
+}
+.sales-body-row a {
+    flex: 1;
+}
+.sales-body-row a img {
+    width: 100%;
+}
+.sales-body-row:nth-child(-n+2) {
+    border-bottom: 1px solid #eeeeee;
+}
+.sales-body-row a:nth-child(1) {
+    border-right: 1px solid #eeeeee;
+}
