@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e3fdfd;
+    cursor: url('bitbug_favicon_two.ico'), auto;
+}
+
+#box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    cursor: url('bitbug_favicon_two.ico'), auto;
+}
+
+#title {
+    width: 500px;
+    line-height: 100px;
+    font-size: 60px;
+    letter-spacing: 7px;
+    font-family: "华文彩云";
+    color: #71c9ce;
+}
+
+#insert {
+    width: 710px;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    cursor: url('bitbug_favicon_two.ico'), auto;
+}
+
+textarea {
+    color: pink;
+    border: none;
+    background: rgba(0, 0, 0, .3);
+    font-size: 25px;
+    text-indent: 50px;
+    padding: 5px 0;
+    resize: none;
+    outline: none;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: url('bitbug_favicon_two.ico'), auto;
+}
+
+textarea:hover {
+    border: 1px solid pink;
+}
+
+label input {
+    margin-left: 10px;
+    font-family: "方正舒体", "华文行楷";
+}
+
+label {
+    font-family: "方正舒体", "华文行楷";
+}
+
+#insert button {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background: rgba(0, 0, 0, .3);
+    border: 1px solid black;
+    margin-left: 448px;
+    margin-top: 10px;
+    border-radius: 7px;
+    cursor: url('bitbug_favicon_two.ico'), auto;
+    font-family: "方正舒体", "华文行楷";
+}
+
+#insert label:hover {
+    color: white;
+}
+
+#insert button:hover {
+    border: 1px solid pink;
+    color: white;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.information {
+    width: 710px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    cursor: url('bitbug_favicon.ico'), pointer;
+    font-family: "方正舒体", "华文行楷";
+}
+
+.information:hover {
+    border: 1px solid pink;
+    color: #3fc1c9;
+}
+
+.inforText {
+    margin-top: 5px;
+    line-height: 30px;
+    text-indent: 34px;
+    font-size: 17px;
+}
+
+.timer {
+    margin-left: 350px;
+    font-size: 20px;
+    color: black;
+}

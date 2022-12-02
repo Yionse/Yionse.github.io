@@ -1,0 +1,125 @@
+* {
+    /*取消所有的边距*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*添加一个背景*/
+    background: rgba(0, 0, 0, .3);
+}
+
+.father {
+    /*标签位置设置为相对的*/
+    position: relative;
+    /*让棋盘居中*/
+    text-align: center;
+}
+
+#canvas {
+    /*位置绝对*/
+    position: absolute;
+    top: 30px;
+    left: 440px;
+    /*设置所在层数，在上层*/
+    z-index: 1;
+    /*自定义鼠标样式*/
+    cursor: url("cursorBlack.cur"), auto;
+}
+
+
+/*需要将img背景图的尺寸和canvas的尺寸设置相同*/
+
+img {
+    width: 640px;
+    height: 640px;
+    /*位置绝对*/
+    position: absolute;
+    top: 30px;
+    left: 440px;
+}
+
+#bg {
+    /*使用C3盒子模型，使其使用内边距时 不会撑开盒子*/
+    box-sizing: border-box;
+    /*遮罩的位置要与棋盘重合*/
+    position: absolute;
+    width: 640px;
+    height: 640px;
+    top: 30px;
+    left: 440px;
+    background: rgba(0, 0, 0, .3);
+    /*进入游戏时，用户并未点击开始游戏，此时棋盘无法操作，将黑色遮罩置于最上方*/
+    z-index: 2;
+    padding-top: 150px;
+}
+
+#bg button {
+    position: absolute;
+    /*设置按钮为块级元素，一行一个*/
+    display: block;
+    /*使按钮居中*/
+    margin: 0 auto;
+    /*设置宽高和背景*/
+    width: 158px;
+    height: 61px;
+    background: url("images/ButtonBackground.png") no-repeat;
+    /*按钮之间有一个间距*/
+    top: 220px;
+    left: 220px;
+    /*更改鼠标样式*/
+    cursor: pointer;
+}
+
+#bg :last-child {
+    /*最后一个按钮离上边要近一些*/
+    top: 320px;
+}
+
+.whiteWin,
+.blackWin {
+    /*赢了的画面*/
+    display: none;
+    /*默认不显示*/
+    position: absolute;
+    /*调整位置大小及背景*/
+    width: 640px;
+    height: 640px;
+    background: rgba(0, 0, 0, .3);
+    top: 30px;
+    left: 440px;
+    z-index: 3;
+    /*层级为最高，遮住所有*/
+}
+
+.whiteWin img,
+.blackWin img {
+    /*两张照片位置的调整*/
+    position: absolute;
+    width: 640px;
+    height: 320px;
+    top: 320px;
+    left: 0;
+}
+
+.whiteWin button,
+.blackWin button {
+    /*重新开始按钮的位置大小以及背景的调整*/
+    position: absolute;
+    width: 158px;
+    height: 61px;
+    background: url("images/ButtonBackground.png") no-repeat;
+    top: 260px;
+    left: 220px;
+    /*设置鼠标样式*/
+    cursor: pointer;
+}
+
+.whiteWin :last-child,
+.blackWin :last-child {
+    /*调整位置*/
+    top: 50px;
+    left: 210px;
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,107 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3901032",
+      "name": "文学",
+      "font_class": "wenxue",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "7605755",
+      "name": "军事学",
+      "font_class": "junshixue",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "12108367",
+      "name": "医学",
+      "font_class": "yixue",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "16270624",
+      "name": "研究生院",
+      "font_class": "yanjiushengyuan",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
+      "icon_id": "20233133",
+      "name": "哲学思想类",
+      "font_class": "zhexuesixianglei",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "20559085",
+      "name": "公共经济学-01",
+      "font_class": "gonggongjingjixue-01",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "23775349",
+      "name": "法学",
+      "font_class": "faxue",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "23775351",
+      "name": "教育学",
+      "font_class": "jiaoyuxue",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "23775398",
+      "name": "历史学",
+      "font_class": "lishixue",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "23775424",
+      "name": "理学",
+      "font_class": "lixue",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "23775437",
+      "name": "工学",
+      "font_class": "gongxue",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "23775443",
+      "name": "农学",
+      "font_class": "nongxue",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "23775487",
+      "name": "管理学",
+      "font_class": "guanlixue",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "23775501",
+      "name": "艺术学",
+      "font_class": "yishuxue",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    }
+  ]
+}

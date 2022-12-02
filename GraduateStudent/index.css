@@ -1,0 +1,21 @@
+.statement {
+    border-bottom: 3px solid #f0f2f5;
+    margin-top: 50px;
+}
+
+.main div:first-child {
+    margin-top: 0;
+}
+
+.statement h1 {
+    font-size: 30px;
+    color: #1890ff;
+    margin-bottom: 20px;
+}
+
+.statement ol li {
+    margin-left: 40px;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+}
