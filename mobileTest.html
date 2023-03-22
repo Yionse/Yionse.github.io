@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>移动端测试</title>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
         div {
             position: absolute;
             width: 100px;
             height: 100px;
-            top:0;
+            left: 0;
+            /* top: 0; */
             background-color: skyblue;
         }
     </style>
 </head>
+
 <body>
-  <div></div>
-  <script>
+    <div></div>
+    <script>
         let div = document.querySelector('div');
         let divX = 0;
         let divY = 0;
@@ -28,10 +32,11 @@
             touchY = e.targetTouches[0].pageY;
         });
         div.addEventListener('touchmove', function(e) {
-            div.style.left = divX + (e.targetTouches[0].pageX - touchX);
-            div.style.top = divY + (e.targetTouches[0].pageX - touchY);
+            div.style.left = divX + (e.targetTouches[0].pageX - touchX) + 'px';
+            div.style.top = divY + (e.targetTouches[0].pageY - touchY) + 'px';
             e.preventDefault();
         });
     </script>
 </body>
+
 </html>
