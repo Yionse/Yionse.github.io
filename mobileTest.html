@@ -30,6 +30,7 @@
         div.addEventListener('touchmove', function(e) {
             div.style.left = divX + (e.targetTouches[0].pageX - touchX);
             div.style.top = divY + (e.targetTouches[0].pageX - touchY);
+            e.preventDefault();
         });
     </script>
 </body>
