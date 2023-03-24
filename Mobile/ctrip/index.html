@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>携程网</title>
+    <link rel="stylesheet" href="../../normalize.css">
+    <link rel="stylesheet" href="../../swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../../swiper/swiper-bundle.min.js"></script>
+    <script defer src='js/index.js'></script>
+</head>
+
+<body>
+    <!-- 搜索模块 -->
+    <div class="search">
+        <div class="search-text">
+            搜索:目的地/酒店/景点/航班号
+        </div>
+        <a href="javascript:0;">我 的</a>
+    </div>
+    <!-- 广告模块 -->
+    <div class="focus">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="upload/focus.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="upload/focus2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="upload/focus3.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- 本地导航 -->
+    <div class="local-nav">
+        <ul>
+            <li><a href="javascript:0;">景点:玩乐</a></li>
+            <li><a href="javascript:0;">周边游</a></li>
+            <li><a href="javascript:0;">美食林</a></li>
+            <li><a href="javascript:0;">一日游</a></li>
+            <li><a href="javascript:0;">当地攻略</a></li>
+        </ul>
+    </div>
+    <!-- 主导航栏 -->
+    <nav class="nav">
+        <div class="common">
+            <div class="common-items">
+                <a href="javascript:0;">酒店</a>
+            </div>
+            <div class="common-items">
+                <a href="javascript:0;" class="common-items-son">海外酒店</a>
+                <a href="javascript:0;" class="common-items-son">特价酒店</a>
+            </div>
+            <div class="common-items">
+                <a href="javascript:0;" class="common-items-son">团购</a>
+                <a href="javascript:0;" class="common-items-son">民宿-客栈</a>
+            </div>
+        </div>
+        <div class="common">
+            <div class="common-items">
+                <a href="javascript:0;">飞机票</a>
+            </div>
+            <div class="common-items">
+                <a href="javascript:0;" class="common-items-son">火车票</a>
+                <a href="javascript:0;" class="common-items-son">特价机票</a>
+            </div>
+            <div class="common-items">
+                <a href="javascript:0;" class="common-items-son">汽车票-船票</a>
+                <a href="javascript:0;" class="common-items-son">专车-租车</a>
+            </div>
+        </div>
+        <div class="common">
+            <div class="common-items">
+                <a href="javascript:0;">旅游</a>
+            </div>
+            <div class="common-items">
+                <a href="javascript:0;" class="common-items-son">门票</a>
+                <a href="javascript:0;" class="common-items-son">目的地攻略</a>
+            </div>
+            <div class="common-items">
+                <a href="javascript:0;" class="common-items-son">邮轮旅行</a>
+                <a href="javascript:0;" class="common-items-son">定制旅行</a>
+            </div>
+        </div>
+    </nav>
+    <!-- 侧导航栏 -->
+    <ul class="subnav">
+        <li>
+            <a href="javascript:0;">WIFI电话卡</a>
+        </li>
+        <li>
+            <a href="javascript:0;">保险签证</a>
+        </li>
+        <li>
+            <a href="javascript:0;">外币兑换</a>
+        </li>
+        <li>
+            <a href="javascript:0;">购物</a>
+        </li>
+        <li>
+            <a href="javascript:0;">当地向导</a>
+        </li>
+        <li>
+            <a href="javascript:0;">自由行</a>
+        </li>
+        <li>
+            <a href="javascript:0;">境外玩乐</a>
+        </li>
+        <li>
+            <a href="javascript:0;">礼品卡</a>
+        </li>
+        <li>
+            <a href="javascript:0;">信用卡</a>
+        </li>
+        <li>
+            <a href="javascript:0;">更多</a>
+        </li>
+    </ul>
+    <!-- 售卖模块 -->
+    <div class="sales">
+        <!-- 标题 -->
+        <div class="sales-title">
+            <h3>热门活动</h3>
+            <div class="more"><a href="javascript:0;">获取更多福利</a></div>
+        </div>
+        <!-- 售卖 -->
+        <div class="sales-body">
+            <div class="sales-body-row">
+                <a href="javascript:0;"><img src="upload/pic1.jpg" alt=""></a>
+                <a href="javascript:0;">
+                    <img src="upload/pic2.jpg" alt="">
+                </a>
+            </div>
+            <div class="sales-body-row">
+                <a href="javascript:0;"><img src="upload/pic3.jpg" alt=""></a>
+                <a href="javascript:0;">
+                    <img src="upload/pic4.jpg" alt="">
+                </a>
+            </div>
+            <div class="sales-body-row">
+                <a href="javascript:0;"><img src="upload/pic5.jpg" alt=""></a>
+                <a href="javascript:0;">
+                    <img src="upload/pic6.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay : {
+                delay : 1500
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }
+        });
+    </script>
+</body>
+
+</html>
